@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Portfolio Skills Table</title>
+    <style>
+		#main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Optional, centers contents vertically */
+            min-height: 100vh; /* Ensures full viewport height for proper centering */
+        }
+        .skills-table {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto; /* Center table horizontally */
+            display: table; /* Ensures the table centers properly */
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .skills-table th, .skills-table td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .skills-table th {
+            background-color: #616361;
+            color: white;
+        }
+        .skills-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .skills-table td strong {
+            color: #333;
+        }
+    </style>
+        <style>
+            body {
+                font-family: Aptos;
+                font-size: 18px;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                background-color: #f9f9f9;
+            }
+            h1, h2 {
+                color: #333;
+            }
+            p{
+                text-align: justify;
+            }
+            ul {
+                list-style-type: square;
+                margin-left: 20px;
+            }
+            section {
+                margin-bottom: 20px;
+            }
+        </style>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Portfolio</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="index.html">Introduction</a></li>
+                <li class="active"><a href="generic.html">Experience</a></li>
+                <li><a href="elements.html">Skills Deep dive</a></li>
+            </ul>
+            
+        </nav>
+
+        <!-- Main -->
+<!-- Main -->
+<!-- Main -->
+<div id="main">
+<!-- Main -->
+<!-- Main -->
+<div id="main">
+    <h3>ASIC Design & Verification Skills and Transferable Software Skills</h3>
+
+    <table id="skills-table" class="skills-table"> <!-- Set an id for the table -->
+        <thead>
+            <tr>
+                <th>ASIC Skills</th>
+                <th>Transferable Software Skills</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <a href="elements.html#svtb-detail" style="color: blue; text-decoration: underline;"><strong style="color: blue;">Testbench Development</strong></a>
+                    <br>
+                    Designing modular testbench components using inheritance and polymorphism for scalability. 
+                    Testing involves stimulus generation, monitors, debugging, coverage analysis, and regression testing with continuous integration to ensure quality and maintainability.    
+                </td>
+                <td>
+                    <strong>Skills</strong><br>
+                    <ul>
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>Test Automation</li>
+                        <li>Debugging</li>
+                        <li>Coverage Analysis</li>
+                        <li>Continuous Integration (CI)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="elements.html#python-script-detail" style="color: blue; text-decoration: underline;"><strong style="color: blue;">Automation with Python</strong></a><br>
+                    Developed Python scripts for testing automation and data analysis.
+                </td>
+                <td>
+                    <strong>Skills</strong><br>
+                    <ul>
+                        <li>Automation</li>
+                        <li>Modular Design</li>
+                        <li>Code Reusability</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="elements.html#crt-detail" style="color: blue; text-decoration: underline;"><strong style="color: blue;">Constrained Random Verification</strong></a><br>
+                    It involves generating random input stimulus for a design under test (DUT) while applying constraints to ensure the generated inputs are valid and meaningful for the test scenario. 
+                    </td>
+                <td style="width: 300px;">
+                    <strong>Skills</strong><br>
+                    <ul>
+                        <li>Test planning and execution</li>
+                        <li>Automation scripting</li>
+                        <li>Randomized input generation</li>
+                        <li>Coverage-driven verification</li>
+                        <li>Constraint-based problem modeling</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="elements.html#cdc-detail" style="color: blue; text-decoration: underline;"><strong style="color: blue;">Clock Domain Crossing (CDC) Analysis</strong></a><br>
+                  Addresses the safe transfer of data between components operating in different clock domains, where clock frequencies or phases may vary. 
+                   </td>
+                <td style="width: 300px;">
+                    <strong>Skills</strong><br>
+                    <ul>
+                        <li>Manage complex system interactions</li>
+                        <li>Ensure data integrity across asynchronous systems</li>
+                        <li>Identifying potential risks</li>
+                        <li>Debugging intricate problems</li>
+                        <li>Optimizing processes</li>
+                    </ul> 
+                    <!-- Transferable skill content for CDC -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="elements.html#lec-detail" style="color: blue; text-decoration: underline;"><strong style="color: blue;">Logical Equivalence Check (LEC)</strong></a><br>
+                    Uses tools like Conformal LEC to ensure that the RTL (Register Transfer Level) design accurately matches its intended specification.
+                    </td>
+                <td>
+                    <strong>Skills</strong><br>
+                    <ul>
+                        <li>Analyzing complex logic</li>
+                        <li>Detecting subtle errors</li>
+                        <li>Validating system functionality</li>
+                        <li>Attention to Detail</li>
+                        <li>Cross-Disciplinary Collaboration</li>
+                    </ul><!-- Transferable skill content for LEC -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="elements.html#fvt-detail" style="color: blue; text-decoration: underline;"><strong style="color: blue;">Formal Verification</strong></a><br>
+                    Uses assertions involves using formal methods to prove the correctness of a design by checking if it adheres to a set of defined properties or behaviors, specified using assertions. 
+                    </td>
+                <td>
+                    <strong>Skills</strong><br>
+                    <ul>
+                <li>Attention to detail</li>
+                <li>Bug prevention</li>
+                <li>Code validation</li>
+                <li>Ensuring design meets its specifications and behaves as expected</li>
+                </ul>
+                    <!-- Transferable skill content for Formal Verification -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="elements.html#upf-detail" style="color: blue; text-decoration: underline;"><strong style="color: blue;">Low Power Verification (UPF)</strong></a><br>
+                    This ensures that a chip’s low-power features won’t compromise its functionality or reliability. 
+                    For software developers, this is comparable to validating that a program’s memory management and resource allocation do not lead to issues like memory leaks or crashes. 
+                   </td>
+                <td>
+                    <strong>Skills</strong><br>
+                    <ul>
+                        <li>Architectural Thinking</li>
+                        <li>Modular Design</li>
+                        <li>Detail-Oriented Approach to Debugging and Testing</li>
+                        <li>Cross-Functional Development Work</li>
+                      </ul>
+                    <!-- Transferable skill content for Low Power Verification -->
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div> <!-- End of Main -->
+
+
+
+
+
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </div> <!-- End of Wrapper -->
+</body>
+</html>

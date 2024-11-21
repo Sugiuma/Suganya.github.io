@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Elements Reference - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+            body {
+                font-family: Aptos;
+				font-size: 18px;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                background-color: #f9f9f9;
+            }
+            h1, h2 {
+                color: #333;
+            }
+            p{
+                text-align: justify;
+            }
+            ul {
+                list-style-type: square;
+                margin-left: 20px;
+            }
+            section {
+                margin-bottom: 20px;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Introduction</a></li>
+							<li><a href="generic.html">Experience</a></li>
+							<li class="active"><a href="elements.html">Skills Deep Dive</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div id="detailed-descriptions" style="padding: 30px; transition: background-color 0.3s ease;">
+							<h2>Detailed Descriptions</h2>
+							<div class="topic-box" id="svtb-detail" >
+    <h3>System Verilog   vs   Software Development</h3>
+  
+<p>
+	In my previous roles in ASIC design and verification, 
+	I extensively used object-oriented programming (OOP) principles to design modular,
+	 reusable, and scalable testbenches for IP verification. 
+	 Key OOP concepts like encapsulation, inheritance, and polymorphism were crucial in structuring testbench for efficiency and adaptability. The below table compares the typical development phases of a testbench vs software development.
+	</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Steps</th>
+                <th>TestBench Development</th>
+                <th>Software Development</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Define the Requirements and Test Plan</td>
+                <td>Gather design specifications, define what needs to be verified.</td>
+                <td>Understand application features and create test cases.</td>
+            </tr>
+            <tr>
+                <td>Create Classes for Testbench Components</td>
+                <td>Design testbench components like drivers, monitors, scoreboards, and sequencers using classes.</td>
+                <td>Define classes for entities and functionalities (e.g., user, payment, database) in object-oriented design.</td>
+            </tr>
+            <tr>
+                <td>Define Testbench with Inheritance and Polymorphism</td>
+                <td>Use inheritance for reusable test cases, polymorphism for test execution.</td>
+                <td>Use inheritance and polymorphism for scalable and maintainable code.</td>
+            </tr>
+            <tr>
+                <td>Create Stimulus and Generate Test Scenarios</td>
+                <td>Create sequences of stimulus driven by the sequencer to test the DUT.</td>
+                <td>Write unit tests and create test scenarios to check various conditions.</td>
+            </tr>
+            <tr>
+                <td>Develop Monitors and Checkers</td>
+                <td>Develop monitors to check DUT outputs, and checkers for functional and timing properties.</td>
+                <td>Implement assertions or checks for expected behaviors and exceptions.</td>
+            </tr>
+            <tr>
+                <td>Write Test Scripts to Run the Testbench</td>
+                <td>Create a script to instantiate and control the testbench and execution flow.</td>
+                <td>Write a main function or script to start tests, configure settings, and run the application.</td>
+            </tr>
+            <tr>
+                <td>Run Simulation and Debug Failures</td>
+                <td>Simulate the DUT and debug failures using waveform viewers.</td>
+                <td>Test the software, debug failures, and fix issues in code.</td>
+            </tr>
+            <tr>
+                <td>Coverage Collection and Analysis</td>
+                <td>Collect coverage metrics like functional coverage, code coverage to ensure thorough testing.</td>
+                <td>Use code coverage tools to ensure that all code paths are tested.</td>
+            </tr>
+            <tr>
+                <td>Refactor Testbench for Reusability and Scalability</td>
+                <td>Refactor testbench to make them modular, reusable, and scalable.</td>
+                <td>Refactor the codebase for better readability, reusability, and efficiency.</td>
+            </tr>
+            <tr>
+                <td>Generate Reports and Documentation</td>
+                <td>Generate test reports, document failures, and coverage results.</td>
+                <td>Generate logs and reports, documenting test results and known issues.</td>
+            </tr>
+            <tr>
+                <td>Regression Testing</td>
+                <td>Automate tests and run them during every new change (integration with CI).</td>
+                <td>Implement continuous integration (CI) to automate testing and ensure no regression occurs.</td>
+            </tr>
+        </tbody>
+	</table>
+	<a href="generic.html#skills-table">Back to Table</a> 
+</div>
+<div class="topic-box" id="python-script-detail">
+	<h3>Python Automation Experience</h3>
+<p>
+In my previous role, I developed Python scripts for managing automated testing workflows, which involved file handling, system interactions, and data manipulation. 
+Using Python libraries like <code>os</code>, <code>sys</code>, <code>random</code>, and <code>shutil</code>, I created modular functions to compile, simulate, and execute tests, 
+along with randomizing test cases and analyzing results. This experience highlights my ability to design efficient, reusable code and automate complex processes & skills directly transferable to software development. 
+My expertise in organizing workflows, managing system resources, and ensuring modular code structure can be applied to building scalable software systems and automating tasks in various development environments.
+</p>
+
+<h3>Key Features of the Python Script</h3>
+
+<ul>
+<li>
+<strong>File Handling:</strong> Python’s built-in libraries like <code>os</code>, <code>sys</code>, and <code>shutil</code> are used for interacting with the operating system. 
+The script navigates directories, checks for file existence, creates symlinks, and runs system commands such as <code>make</code> to compile or simulate tests. 
+The <code>Path</code> object from <code>pathlib</code> is used to handle paths more efficiently, making the code easier to read and maintain.
+</li>
+<li>
+<strong>Randomization and Data Manipulation:</strong> The <code>random</code> module is used to randomize the reading of test lines from an input file. 
+Python’s powerful <code>re</code> (regular expressions) module is utilized to parse and match specific patterns in the file. The logic is based on OOP principles like function-based code separation, 
+ensuring that tasks like compiling or simulating are modular.
+</li>
+<li>
+<strong>Functions:</strong> Uses functions to encapsulate specific behaviors, which is a basic step towards structuring code in an object-oriented way. 
+Functions like <code>compile_test()</code>, <code>simulate_test()</code>, and <code>execute_test()</code> encapsulate distinct actions, providing a way to manage the complexity of the testing process in a clear, reusable manner. 
+
+</li>
+<li>
+<strong>Error Handling:</strong> The script includes logic for handling incorrect command-line arguments and checking flags for different operations (e.g., <code>help_flag</code>, <code>compile_flag</code>), 
+demonstrating execution flow management.
+</li>
+<li>
+<strong>Modular Design:</strong> The separation of concerns (compiling, simulating, and executing tests) into different functions is an example of modular design, a key principle in OOP. 
+This makes the code easier to maintain and extend by simply adding new functions or refactoring existing ones into methods of a class if needed.
+</li>
+</ul>
+
+<a href="generic.html#skills-table">Back to Table</a> <!-- Back to Table link -->
+	</div>
+							<div class="topic-box" id="crt-detail" >
+								<h3>Constrained Random Verification(CRV)</h3>
+								<p>I utilized Constrained Random Verification to validate complex digital designs. This approach leverages random stimulus generation within predefined constraints to achieve extensive test coverage while maintaining meaningful input scenarios. </p>
+								<p><strong>1. Purpose of Constrained Random Verification</strong></p>
+								<p>Instead of creating individual tests for every possible scenario, CRV allows engineers to define constraints for how inputs can vary. The verification tool then generates randomized test cases within these constraints, covering a wide range of scenarios to catch edge cases.</p>
+								<p><strong>2. Key Challenges in Constrained Random Verification</strong></p>
+								<p>Effective CRV requires careful constraint definition and management to ensure meaningful testing. Key challenges include:</p>
+								<ul>
+									<li><strong>Constraint Definition:</strong> Writing clear constraints that allow the test to explore a wide but relevant range of scenarios.</li>
+									<li><strong>Coverage Completeness:</strong> Ensuring that all critical parts of the design are exercised, avoiding blind spots in testing.</li>
+									<li><strong>Debugging Failures:</strong> When a test fails, understanding the specific conditions and constraints that led to the failure can be challenging.</li>
+								</ul>
+							
+								<p><strong>3. How Constrained Random Verification Works</strong></p>
+								<p>CRV tools use constraints to guide the randomization of inputs, balancing randomness with control to produce meaningful tests. The process generally includes:</p>
+								<ul>
+									<li><strong>Defining Constraints:</strong> Engineers specify limits on input values or states to ensure only valid scenarios are tested.</li>
+									<li><strong>Generating Test Scenarios:</strong> The CRV tool automatically creates numerous test cases by randomly selecting values within the constraints.</li>
+									<li><strong>Measuring Coverage:</strong> Coverage metrics assess how thoroughly the test cases explore possible design behaviors, helping identify any untested scenarios.</li>
+								</ul>
+							
+								<p><strong>4. Importance of Constrained Random Verification</strong></p>
+								<p>CRV is essential for thoroughly testing complex designs where exhaustive manual testing is impractical. For software developers, CRV is similar to using randomized inputs in automated testing to identify edge cases. In hardware, CRV allows verification teams to uncover potential design issues early, improving design robustness and reducing errors in final production.</p>
+							
+								<p><strong>Summary</strong><br>
+								Constrained Random Verification generates diverse, controlled test cases to validate complex designs, ensuring comprehensive coverage and reducing the likelihood of unexpected bugs. By defining constraints, CRV combines randomness with structure, enabling efficient exploration of all potential scenarios.</p>
+							
+								<a href="generic.html#skills-table">Back to Table</a> <!-- Back to Table link -->
+							</div>
+							
+							
+							<div class="topic-box" id="fvt-detail">
+								<h3>Formal Verification with PSL/SVA</h3>
+								<p>My experience with formal verification using assertions has honed my skills in ensuring correctness and reliability in complex systems, which directly translates to software development, especially in areas like test-driven development (TDD) and quality assurance. The ability to write and analyze assertions to validate behavior has refined my attention to detail and problem-solving skills, which are essential for building robust, error-free code. This experience also strengthens my understanding of automated testing, bug prevention, and code validation, ensuring software meets its specifications and behaves as expected.
+								</p>
+								<p><strong>1. Purpose of Formal Verification</strong></p>
+								<p>Unlike simulation-based testing, which checks behavior for specific scenarios, Formal Verification mathematically validates that the design will behave correctly across all possible input conditions. This ensures that critical requirements are always met, regardless of operating conditions.</p>
+							
+								<p><strong>2. Key Challenges in Formal Verification</strong></p>
+								<p>Formal Verification requires defining precise properties and behaviors, then proving these against the design without running specific test cases. Key challenges addressed include:</p>
+								<ul>
+									<li><strong>Exhaustive Coverage:</strong> Proving correctness across all input combinations, which ensures no corner cases are missed.</li>
+									<li><strong>Property Complexity:</strong> Writing properties in PSL/SVA can be complex, requiring a deep understanding of design behavior.</li>
+									<li><strong>Debugging Failures:</strong> If a property fails, the verification engineer needs to trace the failure back to specific design issues.</li>
+								</ul>
+							
+								<p><strong>3. How Formal Verification with PSL/SVA Works</strong></p>
+								<p>PSL and SVA allow engineers to specify expected behaviors and constraints mathematically, which Formal Verification tools then use to analyze the design. This process typically includes:</p>
+								<ul>
+									<li><strong>Writing Assertions:</strong> Engineers write PSL/SVA assertions to specify the design's intended behaviors and constraints.</li>
+									<li><strong>Formal Proof:</strong> The tool checks these assertions against all possible inputs, mathematically proving or disproving correctness.</li>
+									<li><strong>Debugging Counterexamples:</strong> If an assertion fails, the tool provides a counterexample, showing how the failure occurs to help debug the issue.</li>
+								</ul>
+							
+								<p><strong>4. Importance of Formal Verification</strong></p>
+								<p>Formal Verification provides a level of assurance that is difficult to achieve with simulation alone, as it proves correctness over all inputs rather than specific scenarios. For software developers, it’s somewhat comparable to using formal proofs in algorithms or exhaustive testing techniques. 
+									In hardware, Formal Verification ensures robustness, particularly for safety-critical systems where reliability is essential.</p>
+							
+								<p><strong>Summary</strong><br>
+								Formal Verification using PSL and SVA provides exhaustive validation of hardware design behavior, proving correctness across all possible scenarios. This ensures that the design is mathematically validated to meet requirements, preventing functional errors and ensuring reliable performance.</p>
+							
+								<a href="generic.html#skills-table">Back to Table</a> <!-- Back to Table link -->
+							</div>
+							
+						
+							<div class="topic-box" id="cdc-detail">
+								<h3>Clock Domain Crossing (CDC) Analysis</h3>
+								<p>In my previous role in ASIC design verification, I gained extensive experience in clock domain crossing (CDC) analysis, utilizing tools like Spyglass to identify and resolve timing and synchronization issues across multiple clock domains. 
+									This experience has honed my ability to manage complex system interactions and ensure data integrity across asynchronous systems, a skill that directly translates to software development, where managing concurrency, multithreading, and system performance are key.
+								</p>
+
+								<p><strong>1. Why CDC Analysis is Necessary</strong></p>
+								<p>In complex digital designs, different parts of a chip may operate under different clock frequencies to optimize performance and power. Whenever data needs to transfer between these clock domains, it’s crucial to ensure that timing and synchronization issues don’t cause data corruption or signal glitches.</p>
+							
+								<p><strong>2. Key Challenges in CDC</strong></p>
+								<p>Data signals crossing clock domains are susceptible to various issues that could impact chip functionality. CDC analysis helps address problems like:</p>
+								<ul>
+									<li><strong>Metastability:</strong> When data transfers between unsynchronized clocks, the signal can enter an unstable state, leading to errors.</li>
+									<li><strong>Data Loss:</strong> Without proper synchronizers, data can be lost or sampled incorrectly, resulting in functional errors.</li>
+									<li><strong>Glitches:</strong> Asynchronous crossings may lead to unwanted signal changes, impacting downstream logic.</li>
+								</ul>
+							
+								<p><strong>3. How CDC Analysis Works</strong></p>
+								<p>CDC tools and methodologies focus on identifying and verifying these crossings to prevent errors. The analysis generally involves:</p>
+								<ul>
+									<li><strong>Identifying CDC Paths:</strong> CDC tools locate all data paths crossing clock domains.</li>
+									<li><strong>Adding Synchronizers:</strong> Synchronization elements (e.g., flip-flop chains) are added to manage safe data transfer.</li>
+									<li><strong>Static Analysis:</strong> CDC tools analyze the design for potential violations without simulation, using formal checks to detect possible metastability or data integrity issues.</li>
+								</ul>
+							
+								<p><strong>4. Why CDC Analysis is Important</strong></p>
+								<p>Ensuring CDC integrity is critical for reliable chip operation, especially in high-speed designs where data integrity is paramount. For software developers, this is somewhat analogous to handling asynchronous data streams or managing thread-safe data access. In hardware, CDC analysis ensures data remains consistent and stable, reducing potential faults in final silicon.</p>
+							
+								<p><strong>Summary</strong><br>
+								CDC analysis is a vital verification step that ensures stable data transfer across different clock domains, preventing issues like data corruption, signal glitches, and metastability. By adding synchronizers and performing static checks, CDC analysis helps ensure reliable and robust hardware designs.</p>
+							
+								<a href="generic.html#skills-table">Back to Table</a> <!-- Back to Table link -->
+							</div>
+							
+							
+							<div class="topic-box" id="lec-detail">
+								<h3>Logical Equivalence Check (LEC)</h3>
+								<p>I performed logical equivalence checks using tools like Conformal LEC to ensure that the RTL (Register Transfer Level) design accurately matched its intended specification. This involved meticulous comparison of logical representations to identify discrepancies and ensure correctness across different design versions. This skill is highly transferable to software development, where logical consistency and ensuring that code implementations match requirements are crucial.
+								   </p>
+							
+								<p><strong>1. Purpose of LEC</strong></p>
+								<p>LEC verifies that the design remains functionally equivalent after each transformation in the synthesis process. This is critical in hardware verification to ensure that optimizations or modifications introduced by synthesis tools do not alter the intended behavior of the design.</p>
+							
+								<p><strong>2. Importance of LEC in Verification</strong></p>
+								<p>As designs are optimized during synthesis, changes like gate-level adjustments can potentially introduce functional errors. LEC provides a way to formally confirm that the synthesized version of the design matches the original intent of the RTL. Key aspects checked in LEC include:</p>
+								<ul>
+									<li><strong>Functional Consistency:</strong> Ensuring that outputs and state transitions in the netlist match the RTL under all input conditions.</li>
+									<li><strong>No Extra Logic:</strong> Confirming that no unintended logic has been introduced during synthesis.</li>
+									<li><strong>Optimization Integrity:</strong> Verifying that changes made for performance or area do not affect functionality.</li>
+								</ul>
+							
+								<p><strong>3. How LEC Works</strong></p>
+								<p>LEC tools perform a formal, mathematical comparison between the RTL and the netlist. Unlike simulation, which checks behavior over specific input scenarios, LEC ensures equivalence across all possible inputs. Steps typically include:</p>
+								<ul>
+									<li><strong>Mapping:</strong> The RTL and netlist are mapped to a common structure to identify equivalent points (often called "key points") in the design.</li>
+									<li><strong>Formal Comparison:</strong> Mathematical algorithms confirm that the mapped points in the RTL and netlist produce identical results.</li>
+									<li><strong>Error Detection:</strong> If discrepancies are found, LEC tools highlight mismatches, allowing verification engineers to pinpoint and correct issues.</li>
+								</ul>
+							
+								<p><strong>4. Why It’s Important</strong></p>
+								<p>LEC is crucial because it ensures that any modifications in the design flow do not introduce functional errors, especially in critical systems. This is similar to verifying that optimized code in software produces the same results as the original code. In hardware, LEC catches issues early in the flow, reducing the risk of costly rework later.</p>
+							
+								<p><strong>Summary</strong><br>
+								LEC helps maintain design integrity by ensuring functional equivalence between the RTL and synthesized versions, minimizing the risk of errors from synthesis optimizations and transformations. This ensures the final hardware design behaves as intended, with no unexpected deviations from the original specifications.</p>
+							
+								<a href="generic.html#skills-table">Back to Table</a> <!-- Back to Table link -->
+							</div>
+							
+							
+							<div class="topic-box" id="upf-detail">
+								<h3>Low Power Verification with UPF</h3>
+								<p>Low Power verification using UPF has equipped me with valuable skills including architectural thinking, modular design, and a detail-oriented approach to debugging and testing. 
+									Collaborating across teams to manage complex power states has strengthened my communication and documentation skills, essential for cross-functional development work. 
+									 
+									</p>
+							
+								<p><strong>1. Power-Aware Verification: The Need for Low-Power Design</strong></p>
+								<p>In modern hardware, devices are increasingly portable, like smartphones and IoT devices, which depend on efficient power usage for longer battery life. To achieve this, chip designs integrate various low-power features, such as power-gating (shutting down inactive parts of a chip) and dynamic voltage scaling (adjusting power levels according to demand). Power-aware verification ensures these low-power mechanisms work as expected, without disrupting the normal functionality of the chip.</p>
+							
+								<p><strong>2. Challenges in Power-Aware Verification</strong></p>
+								<p>When parts of a chip are powered down, data signals between components may be lost, or logic states can become undefined. In addition, power-gating can lead to issues like:</p>
+								<ul>
+									<li><strong>Retention of Data:</strong> Making sure data is saved correctly when a section is powered off.</li>
+									<li><strong>Glitch Prevention:</strong> Ensuring there are no unintended signal changes when power modes switch.</li>
+									<li><strong>Power Mode Switching:</strong> Verifying that transitions between power modes are smooth and functionally safe.</li>
+								</ul>
+								<p>Without proper verification, these low-power strategies could introduce bugs that could cause device malfunctions, like erratic performance or even device crashes.</p>
+							
+								<p><strong>3. Role of UPF (Unified Power Format)</strong></p>
+								<p>UPF is a standardized file format that specifies the chip's power intent alongside the design. Think of it as a "blueprint" that outlines how power should be managed across different parts of the chip. With UPF, we don’t hard-code power details into the design; instead, we use UPF files to define:</p>
+								<ul>
+									<li><strong>Power Domains:</strong> Different sections of the chip that can operate at different power levels.</li>
+									<li><strong>Power States and Modes:</strong> Instructions for when to turn on, off, or reduce power in various domains.</li>
+									<li><strong>Retention and Isolation Logic:</strong> Mechanisms that ensure data is maintained or isolated appropriately when sections are powered down.</li>
+								</ul>
+								<p>This separation allows for flexibility and makes verification more manageable.</p>
+							
+								<p><strong>4. Using UPF in Power-Aware Verification</strong></p>
+								<p>In verification, UPF files are fed into simulation tools, which use the UPF guidelines to simulate the chip’s behavior under different power scenarios. Here’s how the verification process with UPF generally works:</p>
+								<ul>
+									<li><strong>Simulation of Power Scenarios:</strong> UPF enables testing of specific power scenarios, like switching off a power domain, saving its state, and then reactivating it without losing data.</li>
+									<li><strong>Isolation Checks:</strong> Verifies that components in different power domains interact correctly, even when some are powered down, by checking isolation logic.</li>
+									<li><strong>Retention Checks:</strong> Ensures that critical data in powered-off sections is retained, as expected, and restored correctly when power is resumed.</li>
+								</ul>
+								<p><strong>5. Why It’s Important</strong></p>
+								<p>Power-aware verification using UPF is critical because it ensures that a chip’s low-power features won’t compromise its functionality or reliability. For software developers, this is comparable to validating that a program’s memory management and resource allocation do not lead to issues like memory leaks or crashes. In hardware, UPF-based power verification helps catch issues early, reducing costly design iterations and ensuring robust performance in power-sensitive environments.</p>
+							
+								<p><strong>Summary</strong><br>
+								Power-aware verification with UPF helps guarantee that a chip can efficiently manage its power without unexpected behavior. UPF works like a configuration file that defines how various parts of the chip should behave under different power conditions. This verification is crucial in creating power-efficient, reliable devices, which is increasingly important in a world of battery-operated, power-sensitive electronics.</p>
+								
+								<a href="generic.html#skills-table">Back to Table</a> <!-- Back to Table link -->
+							</div>
+							
+							
+						</div> <!-- End of Detailed Descriptions -->
+
+
+						<style>
+							#detailed-descriptions:hover {
+								background-color: #f16f6f;
+							}
+							#crt-detail:hover {
+								background-color: #f9f9f9;
+							}
+						</style>
+						
+					
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
