@@ -160,9 +160,31 @@
 										  </h2>
 										</header>
 									<a href="https://github.com/Sugiuma/RBAC-Project" class="image fit"><img src="images/rbac.jpg" alt="" /></a>
-									<p> Designed and implemented a multi-agent AI chatbot system with secure, role-aware knowledge retrieval, advancing beyond standard RAG architectures. Developed a full-stack solution featuring a Streamlit UI for user authentication, role-based access, and document ingestion, supported by a FastAPI backend managing business logic, user management, and AI orchestration. Built an LLM-powered query classifier for intelligent routing across structured and unstructured data, a SQL agent translating natural language questions into DuckDB queries, and a RAG agent leveraging embeddings and vector search for document retrieval. Enhanced system reliability with fallback mechanisms for query failures and improved answer precision using a Cohere reranker, delivering accurate, contextually relevant responses across diverse data sources.
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Business Problem:</b></i></span></p>
+<ul>
+  <li>FinSolve Technologies faced operational inefficiencies caused by communication delays and fragmented, siloed data across departments including Finance, Marketing, HR, and Executive leadership.</li>
+  <li>Departmental isolation limited timely access to relevant information, slowing decision-making, strategic planning, and project execution.</li>
+  <li>The organization required a secure, role-based AI solution to deliver on-demand, department-specific insights while enforcing strict access controls to maintain data confidentiality and operational efficiency.</li>
+</ul>
 
-									</p>
+<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Solution:</b></i></span></p>
+<ul>
+  <li>Designed and implemented a secure, multi-agent AI chatbot platform that extends beyond standard RAG by enabling live, role-aware knowledge access across continuously evolving data sources.</li>
+  <li>Enabled real-time document uploads (Markdown, CSV), dynamic creation of users and roles, and immediate availability of newly ingested knowledge for future queries under strict RBAC policies.</li>
+  <li>Developed a full-stack architecture combining a Streamlit UI for authentication, role management, and document ingestion with a FastAPI backend for business logic and AI orchestration.</li>
+  <li>Integrated an LLM-based query classifier to intelligently route queries to a SQL agent (DuckDB) for structured data or a RAG agent for unstructured documents.</li>
+  <li>Enhanced response reliability using embedding-based retrieval, reranking strategies, and fallback mechanisms.</li>
+</ul>
+
+<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Impact:</b></i></span></p>
+<ul>
+	<li><b>Scalability & Extensibility:</b> Architected a modular, role-driven RAG system that supports dynamic onboarding of new users, roles, and documents, enabling seamless scaling across departments, larger datasets, and future AI agents without redeployment.</li>
+	<li><b>Innovation:</b> Introduced an LLM-based query classifier that intelligently routes queries to SQL or RAG agents, combined with live document ingestion, metadata-driven RBAC, and fallback mechanisms to ensure reliable and efficient responses.</li>
+	<li><b>NLP Query Understanding:</b> Delivered robust natural language understanding with context-aware retrieval, role-filtered responses, and effective handling of ambiguous or underspecified queries through semantic search and reranking.</li>
+	<li><b>Overall Business Value:</b> Eliminated data silos and enabled secure, real-time access to evolving organizational knowledge, accelerating decision-making while maintaining strict data governance.</li>
+  </ul>
+
+									
 									<ul class="actions special">
 										<li><a href="https://youtu.be/3iH3QFaSDhY?si=lOxokruw0h8P9ScB" class="button">Video - 2min Overview </a></li>
 									</ul>
@@ -183,9 +205,31 @@
 										  </h2>
 										</header>
 									<a href="https://github.com/Sugiuma/ADEGuard" class="image fit"><img src="images/adewinner.jpg" alt="" /></a>
-									<p>Engineered ADEGuard - an intelligent clinical text analytics system that automatically detects Adverse Drug Events (ADEs) and evaluates their severity from unstructured narratives. It combines BioBERT-based NER for ADE and drug extraction, a hybrid severity classifier (rule-based + BioBERT fine-tuning with Snorkel weak labels), and Sentence-BERT embeddings for clustering and similarity analysis. Using t-SNE + K-Means, it visualizes ADE patterns across age and severity groups, while SHAP explainability ensures transparency in model predictions. The interactive Streamlit dashboard features token-level entity highlights, severity adjudication, cluster visualizations, and downloadable clinical insights for pharmacovigilance and decision support.
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Business Problem:</b></i></span></p>
+									<ul>
+									  <li>Mass COVID-19 vaccination programs generated large-scale Adverse Drug Event (ADE) data that is difficult to analyze due to noisy, unstructured clinical narratives.</li>
+									  <li>Existing pharmacovigilance systems lack standardized severity labeling, contextual clinical details, and age-specific safety pattern discovery.</li>
+									  <li>These gaps limit regulators and healthcare stakeholders from accurately assessing drug safety risks and making timely, evidence-based decisions.</li>
+									</ul>
+									
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Solution:</b></i></span></p>
+									<ul>
+									  <li>Developed <b>ADEGuard</b>, an AI-driven clinical text analytics system for automated ADE detection and severity assessment from unstructured reports.</li>
+									  <li>Applied BioBERT-based NER to extract drugs and adverse events, combined with a hybrid severity classifier using rules and BioBERT fine-tuning with weak supervision.</li>
+									  <li>Leveraged Sentence-BERT embeddings with t-SNE and K-Means to cluster and visualize ADE patterns across age groups and severity levels.</li>
+									  <li>Integrated SHAP explainability to provide transparent, clinically interpretable severity predictions.</li>
+									  <li>Delivered an interactive Streamlit dashboard with entity highlighting, severity views, clustering visualizations, and exportable insights.</li>
+									</ul>
+									
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Impact:</b></i></span></p>
+<ul>
+  <li><b>Scalability & Extensibility:</b> Designed a modular, dataset-agnostic architecture capable of scaling to large COVID-19 ADE datasets and integrating seamlessly into enterprise pharmacovigilance workflows and downstream analytics pipelines.</li>
+  <li><b>Innovation:</b> Employed a hybrid clinical NLP pipeline combining BioBERT-based NER, weak supervision via Snorkel, and rule-driven post-processing to improve inference reliability while minimizing annotation cost and deployment complexity.</li>
+  <li><b>Extraction Accuracy:</b> Achieved high precision, recall, and F1-scores for ADE and drug entity extraction on a gold-standard annotated COVID-19 test set, effectively handling ambiguous phrasing, overlapping entities, and complex clinical sentence structures.</li>
+  <li><b>Overall Business Value:</b> Enabled instant ingestion of raw ADE CSV files, automatically generating structured safety reports and actionable insights segmented by drug, adverse event, age group, and predicted severity, supporting real-time decision-making and regulatory review.</li>
+</ul>
 
-									</p>
+									
 									<ul class="actions special">
 										<li><a href="https://youtu.be/zLSZn18CLPU?si=KelwBTZpKFbXBDs5" class="button">Video - 2min Overview </a></li>
 									</ul>
@@ -206,9 +250,28 @@
 										  </h2>
 										</header>
 									<a href="https://github.com/Sugiuma/Air-Quality" class="image fit"><img src="images/aqi.jpg" alt="" /></a>
-									<p>Designed and developed an end-to-end AQI analytics and market simulation framework using Python, Plotly, Prophet, and Streamlit to inform consumer-centric, sustainable air purifier product design. Built an interactive, one-page dashboard allowing stakeholders to dynamically adjust parameters and evaluate city-level demand and adoption scenarios in real time. Developed modules for market size estimation, consumer behavior trends, health impact assessment, and competitive product analysis, delivering a decision-ready tool that integrates analytics, simulation, and product strategy. The solution goes beyond traditional BI dashboards by providing a fully interactive market simulator, translating complex environmental and market data into actionable insights for business and product decisions.
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Business Problem:</b></i></span></p>
+<ul>
+  <li>AirPure Innovations aims to develop air purifiers amid India’s severe air pollution, with 14 cities among the world’s 20 most polluted.</li>
+  <li>The startup needs to assess market demand and product requirements before committing to production and R&D.</li>
+  <li>Key questions include: identifying target pollutants, defining essential product features, estimating city-level demand and market size, and aligning R&D with localized pollution patterns.</li>
+</ul>
 
-									</p>
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Solution:</b></i></span></p>
+<ul>
+  <li>Designed and developed an end-to-end AQI analytics and market simulation framework using Python, Plotly, Prophet, and Streamlit to guide consumer-centric, sustainable air purifier design.</li>
+  <li>Built a fully interactive, one-page Streamlit dashboard that allows stakeholders to dynamically adjust parameters and instantly evaluate city-level demand and adoption scenarios.</li>
+  <li>Developed modules for market size estimation, consumer behavior analysis, health impact assessment, and competitive product evaluation, integrating analytics, simulation, and strategy in a single tool.</li>
+  <li>Implemented advanced forecasting with Prophet for real-time demand prediction and scenario analysis, providing actionable insights beyond static BI dashboards.</li>
+</ul>
+<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Impact:</b></i></span></p>
+<ul>
+  <li><b>Innovation:</b> Developed a fully interactive, one-page Streamlit platform combining static insights with dynamic city-level simulations, integrating population, disease, environmental datasets, and composite city scores.</li>
+  <li><b>Predictive Analytics:</b> Implemented Prophet-based forecasting to predict real-time demand and adoption trends for air purifiers across cities, enabling scenario planning and strategic prioritization.</li>
+  <li><b>Operational Efficiency:</b> Delivered a decision-ready tool that eliminates the need for navigating traditional BI dashboards, providing actionable insights on a single interface.</li>
+  <li><b>Overall Business Value:</b> Empowered data-driven R&D and product strategy by translating complex environmental and market data into actionable insights for product design, market sizing, and city-level demand evaluation.</li>
+</ul>
+
 									<ul class="actions special">
 										<li><a href="https://youtu.be/LjJmLiWOt9w?si=5oeJ1xKSoJ5pRej0" class="button">Video - 2min Overview </a></li>
 									</ul>
@@ -228,8 +291,30 @@
 										<h2><a href="https://github.com/Sugiuma/Portfolio_Projects/tree/main/IBM_Capstone_Project">Full Stack Data Science Project</a></h2>
 									</header>
 									<a href="https://github.com/Sugiuma/Portfolio_Projects/tree/main/IBM_Capstone_Project" class="image fit"><img src="images/capstone.webp" alt="" /></a>
-									<p>In this Data Analysis project, the goal is to identify top in-demand programming skills for the current year by collecting data from job postings, training platforms, and surveys. The project started by gathering data on programming languages, database skills, and popular IDEs from online sources via web scraping and API access, storing data in formats like .csv, Excel, and databases. Data wrangling techniques prepared the dataset for analysis, followed by statistical analysis to uncover trends and insights. Finally, IBM Cognos Analytics is used to build a dashboard to convey the story behind the data.
-										</p>
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Business Problem:</b></i></span></p>
+<ul>
+  <li>Organizations and professionals face uncertainty in prioritizing which programming skills are most in-demand for the current year.</li>
+  <li>Job postings, training platforms, and surveys provide fragmented and rapidly changing information, making trend identification challenging.</li>
+  <li>Decision-makers need actionable insights on programming languages, databases, and development tools to guide hiring, training, and career planning.</li>
+</ul>
+
+<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Solution:</b></i></span></p>
+<ul>
+  <li>Collected data from multiple sources, including online job postings, training platforms, and industry surveys, using web scraping and API integrations.</li>
+  <li>Stored and managed data in structured formats including CSV, Excel, and relational databases to ensure scalability and reproducibility.</li>
+  <li>Performed data wrangling and preprocessing to clean, normalize, and integrate datasets for consistent analysis.</li>
+  <li>Applied statistical analysis and trend detection techniques to identify top programming languages, database skills, and IDEs in demand.</li>
+  <li>Developed an interactive IBM Cognos Analytics dashboard to visualize trends, highlight skill gaps, and provide actionable insights for hiring managers, educators, and professionals.</li>
+</ul>
+
+<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Impact:</b></i></span></p>
+<ul>
+  <li><b>Actionable Insights:</b> Enabled stakeholders to identify high-demand programming skills and prioritize hiring, training, and upskilling efforts based on current market trends.</li>
+  <li><b>Data-Driven Decision Making:</b> Consolidated fragmented job and survey data into a unified, reliable source for trend analysis and strategic workforce planning.</li>
+  <li><b>Interactive Visualization:</b> Provided a dynamic dashboard that allows users to explore skill demand by region, job role, and technology, facilitating faster and informed decision-making.</li>
+  <li><b>Future Scalability:</b> The data pipeline supports regular updates and integration of new sources, allowing ongoing tracking of programming skill trends over time.</li>
+</ul>
+
 									<ul class="actions special">
 										<li><a href="https://github.com/Sugiuma/Portfolio_Projects/tree/main/IBM_Capstone_Project" class="button">GitHub</a></li>
 									</ul>
