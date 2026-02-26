@@ -206,16 +206,12 @@
 									  <li>Integrated SHAP explainability to provide transparent, clinically interpretable severity predictions.</li>
 									  <li>Delivered an interactive Streamlit dashboard with entity highlighting, severity views, clustering visualizations, and exportable insights.</li>
 									</ul>
-									
-									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Impact:</b></i></span></p>
-<ul>
-  <li><b>Scalability & Extensibility:</b> Designed a modular, dataset-agnostic architecture capable of scaling to large COVID-19 ADE datasets and integrating seamlessly into enterprise pharmacovigilance workflows and downstream analytics pipelines.</li>
-  <li><b>Innovation:</b> Employed a hybrid clinical NLP pipeline combining BioBERT-based NER, weak supervision via Snorkel, and rule-driven post-processing to improve inference reliability while minimizing annotation cost and deployment complexity.</li>
-  <li><b>Extraction Accuracy:</b> Achieved high precision, recall, and F1-scores for ADE and drug entity extraction on a gold-standard annotated COVID-19 test set, effectively handling ambiguous phrasing, overlapping entities, and complex clinical sentence structures.</li>
-  <li><b>Overall Business Value:</b> Enabled instant ingestion of raw ADE CSV files, automatically generating structured safety reports and actionable insights segmented by drug, adverse event, age group, and predicted severity, supporting real-time decision-making and regulatory review.</li>
-</ul>
-
-									
+									<ul>
+										<li><b>Scalability & Extensibility:</b> Designed a modular, dataset-agnostic architecture capable of scaling to large COVID-19 ADE datasets and integrating seamlessly into enterprise pharmacovigilance workflows and downstream analytics pipelines.</li>
+										<li><b>Innovation:</b> Employed a hybrid clinical NLP pipeline combining BioBERT-based NER, weak supervision via Snorkel, and rule-driven post-processing to improve inference reliability while minimizing annotation cost and deployment complexity.</li>
+										<li><b>Extraction Accuracy:</b> Achieved high precision, recall, and F1-scores for ADE and drug entity extraction on a gold-standard annotated COVID-19 test set, effectively handling ambiguous phrasing, overlapping entities, and complex clinical sentence structures.</li>
+										<li><b>Overall Business Value:</b> Enabled instant ingestion of raw ADE CSV files, automatically generating structured safety reports and actionable insights segmented by drug, adverse event, age group, and predicted severity, supporting real-time decision-making and regulatory review.</li>
+									  </ul>
 									<ul class="actions special">
 										<li><a href="https://youtu.be/zLSZn18CLPU?si=KelwBTZpKFbXBDs5" class="button">Video - 2min Overview </a></li>
 									</ul>
@@ -226,7 +222,69 @@
 										<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7382246089745342466/" class="button">Presentation Video</a></li>
 									</ul>
 								</article>
-								<article>
+									<article>
+									<header>
+										<span class="date" style="font-family: 'Aptos'; font-size: 16px;">Customer Segmentation & Retention Analysis</span>
+										<h2>
+											<a href="https://github.com/Sugiuma/End_to_End_MLOPS">
+												End to End MLOPS
+											</a>
+										  </h2>
+										</header>
+									<a href="https://github.com/Sugiuma/End_to_End_MLOPS" class="image fit"><img src="images/arch.png" alt="" /></a>
+									
+								<p><span style="font-family: 'Aptos'; font-size: 16px;"><i><b>Business Problem:</b></i></span></p> 
+								<ul> <li>Telecom companies face significant revenue loss due to customer churn, where customers discontinue their services and switch to competitors.</li> 
+									<li>Traditional reactive retention strategies lack predictive intelligence, preventing timely intervention for high-risk customers.</li> 
+									<li>The organization required a scalable, production-grade machine learning system capable of predicting churn probability to enable proactive, risk-based customer retention strategies.</li> </ul> 
+									<p><span style="font-family: 'Aptos'; font-size: 16px;"><i><b>Solution:</b></i></span></p> <ul> 
+										<li>Designed and implemented a modular, production-ready ML pipeline covering data ingestion, validation, transformation, model training, evaluation, and batch prediction.</li> 
+										<li>Enabled experiment tracking and model versioning using MLflow to ensure reproducibility and performance comparison across experiments.</li>
+										 <li>Integrated data drift detection in both validation and production environments to maintain model reliability and detect distributional shifts.</li> 
+										 <li>Developed a Streamlit-based batch prediction interface that outputs churn labels and probability scores for risk-based decision-making.</li> 
+										 <li>Containerized the application using Docker and deployed it on AWS EC2, with model artifacts securely stored and retrieved from Amazon S3.</li> </ul> 
+										 <p><span style="font-family: 'Aptos'; font-size: 16px;"><i><b>Impact:</b></i></span></p> <ul> 
+											 <li><b>Proactive Retention Strategy:</b> Enabled identification of high-risk customers using probability-based scoring, allowing the business to prioritize targeted retention campaigns.</li> 
+											 <li><b>Production-Grade Reliability:</b> Ensured model stability through automated monitoring and drift detection, reducing the risk of performance degradation over time.</li> 
+											 <li><b>Scalability & Deployment Readiness:</b> Architected a Dockerized, cloud-deployed ML system capable of handling batch predictions in a real-world environment.</li> 
+											 <li><b>Operational Efficiency:</b> Automated the end-to-end ML lifecycle, reducing manual intervention and enabling faster, data-driven business decisions.</li> </ul>
+											 <ul class="actions special">
+												<li><a href="https://github.com/Sugiuma/End_to_End_MLOPS" class="button">GitHub</a></li>
+											</ul>
+											</article>
+											<article>
+												<header>
+													<span class="date" style="font-family: 'Aptos'; font-size: 16px;"> Automated Car Damage Classification</span>
+													<h2>
+														<a href="https://github.com/Sugiuma/Deep_Learning_Project">
+															Deep Learning
+														</a>
+													  </h2>
+													</header>
+												<a href="https://github.com/Sugiuma/Deep_Learning_Project" class="image fit"><img src="images/deep.png" alt="" /></a>
+												
+											<p><span style="font-family: 'Aptos'; font-size: 16px;"><i><b>Business Problem:</b></i></span></p> 
+											<ul> <li>Insurance companies, auto repair shops, and vehicle inspection services rely heavily on manual visual assessments of car damage, which are time-consuming and prone to subjective judgment.</li>
+												 <li>Inconsistent evaluations can slow claims processing, increase operational costs, and introduce variability in damage appraisal.</li> 
+												<li>There was a need for an automated, high-precision system to classify vehicle damage efficiently, improving workflow speed and consistency across stakeholders.</li> </ul> 
+												<p><span style="font-family: 'Aptos'; font-size: 16px;"><i><b>Solution:</b></i></span></p>
+												 <ul> <li>Developed a supervised learning pipeline leveraging multiple Convolutional Neural Network (CNN) architectures to classify car damage into six distinct categories.</li> 
+													<li>Implemented transfer learning using pre-trained ImageNet backbones to accelerate training and capture complex visual features.</li> 
+													<li>Applied advanced data augmentation strategies, including geometric and color-space transformations, to improve model robustness and generalization.</li>
+													 <li>Performed systematic hyperparameter tuning of learning rates, dropout ratios, and batch sizes to optimize convergence and validation accuracy.</li> 
+													 <li>Deployed a Streamlit-based interactive interface enabling real-time predictions, model testing, and rapid stakeholder feedback.</li> 
+													 <li>Integrated comprehensive evaluation tools, including confusion matrices and classification reports, for detailed insights into class-specific performance metrics.</li> </ul>
+													  <p><span style="font-family: 'Aptos'; font-size: 16px;"><i><b>Impact:</b></i></span></p> 
+													  <ul> <li><b>Operational Efficiency:</b> Reduced manual inspection time, accelerating claims processing and damage assessments for insurance and repair workflows.</li> 
+														<li><b>Consistency & Accuracy:</b> Provided objective, reproducible damage classification, minimizing human subjectivity and errors.</li> 
+														<li><b>Scalability & Deployment:</b> Delivered a robust CNN-based solution with an interactive web interface for real-time deployment and stakeholder adoption.</li> 
+														<li><b>Data-Driven Insights:</b> Enabled detailed performance analysis per damage category, supporting continuous model improvement and informed business decisions.</li> </ul>
+														<ul class="actions special">
+															<li><a href="https://github.com/Sugiuma/Deep_Learning_Project" class="button">GitHub</a></li>
+														</ul>
+														</article>
+								
+														<article>
 									<header>
 										<span class="date" style="font-family: 'Aptos'; font-size: 16px;">Market Research Analytics</span>
 										<h2>
