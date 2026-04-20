@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Suganya G – Project Detail</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+				font-family: Aptos;
+				font-size: 18px;
+				line-height: 1.6;
+				margin: 0;
+				padding: 20px;
+				background-color: #f9f9f9;
+			}
+			h1, h2 {
+				color: #333;
+			}
+			p, ul {
+				text-align: justify;
+			}
+			ul {
+				list-style-type: square;
+				margin-left: 20px;
+			}
+			section {
+				margin-bottom: 20px;
+			}
+			#back-btn {
+				display: inline-block;
+				margin: 1.5em 0 1em 0;
+				padding: 0.55em 1.4em;
+				background: #ffffff;
+				color: #333;
+				border: 2px solid #aaa;
+				border-radius: 4px;
+				font-size: 15px;
+				font-family: Aptos, sans-serif;
+				cursor: pointer;
+				text-decoration: none;
+				transition: background 0.2s, border-color 0.2s;
+			}
+			#back-btn:hover {
+				background: #f0f0f0;
+				border-color: #666;
+			}
+			#project-content {
+				max-width: 860px;
+				margin: 0 auto;
+			}
+			#project-content .image.fit {
+				margin-bottom: 1.5em;
+			}
+			#project-content .image.fit img {
+				width: 100%;
+				border-radius: 6px;
+			}
+			.project-category {
+				font-family: 'Aptos';
+				font-size: 16px;
+				color: #888;
+				display: block;
+				margin-bottom: 0.3em;
+			}
+			.project-title {
+				margin-top: 0;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">Suganya Govindaraj</a>
+			</header>
+		</div>
+
+		<!-- Main -->
+		<div id="main">
+			<div id="project-content">
+
+				<a href="index.html" id="back-btn">← Back to Projects</a>
+
+				<!-- Dynamically populated by JS -->
+				<article id="project-article" class="post featured">
+					<p id="loading-msg" style="color:#aaa;">Loading project…</p>
+				</article>
+
+			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+		// ─── Project Data ────────────────────────────────────────────────────────────
+		const projects = {
+			1: {
+				category: "AI/ML Applied to Design Verification",
+				title: "UVM Functional Coverage Analysis Using AI/ML",
+				image: "images/coverage.png",
+				imageAlt: "UVM Coverage ML",
+				problem: [
+					"In traditional UVM-based verification, achieving functional coverage closure requires manually tuning constraints and writing targeted directed sequences — a process that is time-consuming, iterative, and heavily dependent on engineer intuition.",
+					"As design complexity grows, uncovered bins become harder to identify through manual inspection of regression reports, leading to longer closure cycles and delayed sign-off.",
+					"The core question: can coverage closure be data-driven instead of manual and iterative?"
+				],
+				solution: [
+					"Treated the UVM verification environment as a data pipeline — converting simulation logs into a structured training dataset to enable data-driven coverage closure.",
+					"Trained a Decision Tree classifier using scikit-learn to identify which signal values and stimulus patterns correlate with uncovered bins, learning directly from historical regression data.",
+					"Generated predictions from the trained model and translated them into auto-generated SystemVerilog soft constraints, feeding back into the UVM environment for the next regression cycle.",
+					"Implemented the approach based on DVCON-presented methodology, adapting the pipeline end-to-end: simulation log parsing → feature extraction → ML training → constraint generation."
+				],
+				impact: [
+					"<b>Data-Driven Coverage Closure:</b> Replaced manual constraint tuning with an ML-driven feedback loop, enabling the verification environment to self-direct towards uncovered bins based on learned signal correlations.",
+					"<b>Reduced Manual Iteration:</b> Auto-generated SystemVerilog soft constraints eliminate the manual write-run-debug cycle, reducing the effort required per regression iteration.",
+					"<b>Scalability:</b> The pipeline is design-agnostic — simulation logs from any UVM environment can be fed into the framework, making it applicable across IP blocks and protocol verification projects.",
+					"<b>DV-AI Integration:</b> Demonstrated a practical, end-to-end bridge between machine learning inference and a live UVM regression environment — closing the loop from ML prediction back into SystemVerilog."
+				],
+				links: [
+					{ label: "Project Report", url: "https://www.linkedin.com/feed/update/urn:li:activity:7444113188930863105/" }
+				]
+			},
+			2: {
+				category: "AI/ML Applied to Design Verification",
+				title: "AI/ML-Driven Regression Optimization for DV",
+				image: "images/regression.png",
+				imageAlt: "DV Regression ML",
+				problem: [
+					"Modern ASIC verification regressions can contain hundreds to thousands of test cases, many of which are redundant or low-yield for a given design state — yet all are run by default, consuming significant compute time and delaying bug discovery.",
+					"Test selection and prioritisation are typically done manually or through simple heuristics, with no mechanism to learn from historical regression data about which tests are most likely to expose new failures.",
+					"The challenge: can ML learn from past regression history to intelligently prioritise which tests to run first, surfacing failures faster and reducing overall regression turnaround time?"
+				],
+				solution: [
+					"Implementing DVCON-presented techniques to apply machine learning to regression test selection and prioritisation in UVM-based hardware verification workflows.",
+					"Parsing historical regression logs to extract per-test features — pass/fail history, coverage contribution, runtime, seed, and design state indicators — building a structured dataset for ML training.",
+					"Training classification and ranking models using scikit-learn to predict test failure likelihood and coverage yield, enabling intelligent ordering of the regression suite.",
+					"Feeding ranked test lists back into the UVM regression environment, prioritising high-impact tests to surface bugs and coverage gaps earlier in the regression cycle."
+				],
+				impact: [
+					"<b>Faster Bug Discovery:</b> By running highest-failure-probability tests first, critical bugs are surfaced early in the regression cycle rather than at the tail end of a full run.",
+					"<b>Reduced Compute Cost:</b> Intelligent test selection reduces the number of tests required to achieve equivalent coverage and failure detection, lowering simulation resource consumption.",
+					"<b>Learning from History:</b> The ML model improves with each regression cycle as new pass/fail data is added, making the system progressively smarter over time.",
+					"<b>DV Workflow Integration:</b> Designed to integrate with existing UVM regression infrastructure — the ML layer sits alongside the verification environment without requiring changes to the testbench architecture."
+				],
+				links: [
+					{ label: "Project Report", url: "https://www.linkedin.com/feed/update/urn:li:activity:7448767370136846337/" }
+				]
+			},
+			3: {
+				category: "Role Based Access Control Chatbot",
+				title: "RAG System",
+				image: "images/rbac.jpg",
+				imageAlt: "RBAC RAG System",
+				problem: [
+					"FinSolve Technologies faced operational inefficiencies caused by communication delays and fragmented, siloed data across departments including Finance, Marketing, HR, and Executive leadership.",
+					"Departmental isolation limited timely access to relevant information, slowing decision-making, strategic planning, and project execution.",
+					"The organization required a secure, role-based AI solution to deliver on-demand, department-specific insights while enforcing strict access controls to maintain data confidentiality and operational efficiency."
+				],
+				solution: [
+					"Designed and implemented a secure, multi-agent AI chatbot platform that extends beyond standard RAG by enabling live, role-aware knowledge access across continuously evolving data sources.",
+					"Enabled real-time document uploads (Markdown, CSV), dynamic creation of users and roles, and immediate availability of newly ingested knowledge for future queries under strict RBAC policies.",
+					"Developed a full-stack architecture combining a Streamlit UI for authentication, role management, and document ingestion with a FastAPI backend for business logic and AI orchestration.",
+					"Integrated an LLM-based query classifier to intelligently route queries to a SQL agent (DuckDB) for structured data or a RAG agent for unstructured documents.",
+					"Enhanced response reliability using embedding-based retrieval, reranking strategies, and fallback mechanisms."
+				],
+				impact: [
+					"<b>Scalability & Extensibility:</b> Architected a modular, role-driven RAG system that supports dynamic onboarding of new users, roles, and documents, enabling seamless scaling across departments, larger datasets, and future AI agents without redeployment.",
+					"<b>Innovation:</b> Introduced an LLM-based query classifier that intelligently routes queries to SQL or RAG agents, combined with live document ingestion, metadata-driven RBAC, and fallback mechanisms to ensure reliable and efficient responses.",
+					"<b>NLP Query Understanding:</b> Delivered robust natural language understanding with context-aware retrieval, role-filtered responses, and effective handling of ambiguous or underspecified queries through semantic search and reranking.",
+					"<b>Overall Business Value:</b> Eliminated data silos and enabled secure, real-time access to evolving organizational knowledge, accelerating decision-making while maintaining strict data governance."
+				],
+				links: [
+					{ label: "Video - 2min Overview", url: "https://youtu.be/3iH3QFaSDhY?si=lOxokruw0h8P9ScB" },
+					{ label: "GitHub", url: "https://github.com/Sugiuma/RBAC-Project" },
+					{ label: "Presentation Video", url: "https://www.linkedin.com/feed/update/urn:li:activity:7344931692152832001/" }
+				]
+			},
+			4: {
+				category: "Adverse Drug Event (ADE) Detection & Severity Analysis",
+				title: "NLP System — ADEGuard",
+				image: "images/adewinner.jpg",
+				imageAlt: "ADEGuard NLP",
+				problem: [
+					"Mass COVID-19 vaccination programs generated large-scale Adverse Drug Event (ADE) data that is difficult to analyze due to noisy, unstructured clinical narratives.",
+					"Existing pharmacovigilance systems lack standardized severity labeling, contextual clinical details, and age-specific safety pattern discovery.",
+					"These gaps limit regulators and healthcare stakeholders from accurately assessing drug safety risks and making timely, evidence-based decisions."
+				],
+				solution: [
+					"Developed <b>ADEGuard</b>, an AI-driven clinical text analytics system for automated ADE detection and severity assessment from unstructured reports.",
+					"Applied BioBERT-based NER to extract drugs and adverse events, combined with a hybrid severity classifier using rules and BioBERT fine-tuning with weak supervision.",
+					"Leveraged Sentence-BERT embeddings with t-SNE and K-Means to cluster and visualize ADE patterns across age groups and severity levels.",
+					"Integrated SHAP explainability to provide transparent, clinically interpretable severity predictions.",
+					"Delivered an interactive Streamlit dashboard with entity highlighting, severity views, clustering visualizations, and exportable insights."
+				],
+				impact: [
+					"<b>Scalability & Extensibility:</b> Designed a modular, dataset-agnostic architecture capable of scaling to large COVID-19 ADE datasets and integrating seamlessly into enterprise pharmacovigilance workflows and downstream analytics pipelines.",
+					"<b>Innovation:</b> Employed a hybrid clinical NLP pipeline combining BioBERT-based NER, weak supervision via Snorkel, and rule-driven post-processing to improve inference reliability while minimizing annotation cost and deployment complexity.",
+					"<b>Extraction Accuracy:</b> Achieved high precision, recall, and F1-scores for ADE and drug entity extraction on a gold-standard annotated COVID-19 test set, effectively handling ambiguous phrasing, overlapping entities, and complex clinical sentence structures.",
+					"<b>Overall Business Value:</b> Enabled instant ingestion of raw ADE CSV files, automatically generating structured safety reports and actionable insights segmented by drug, adverse event, age group, and predicted severity, supporting real-time decision-making and regulatory review."
+				],
+				links: [
+					{ label: "Video - 2min Overview", url: "https://youtu.be/zLSZn18CLPU?si=KelwBTZpKFbXBDs5" },
+					{ label: "GitHub", url: "https://github.com/Sugiuma/ADEGuard" },
+					{ label: "Presentation Video", url: "https://www.linkedin.com/feed/update/urn:li:activity:7382246089745342466/" }
+				]
+			},
+			5: {
+				category: "Customer Segmentation & Retention Analysis",
+				title: "End to End MLOPS",
+				image: "images/arch.png",
+				imageAlt: "MLOps Pipeline",
+				problem: [
+					"Telecom companies face significant revenue loss due to customer churn, where customers discontinue their services and switch to competitors.",
+					"Traditional reactive retention strategies lack predictive intelligence, preventing timely intervention for high-risk customers.",
+					"The organization required a scalable, production-grade machine learning system capable of predicting churn probability to enable proactive, risk-based customer retention strategies."
+				],
+				solution: [
+					"Designed and implemented a modular, production-ready ML pipeline covering data ingestion, validation, transformation, model training, evaluation, and batch prediction.",
+					"Enabled experiment tracking and model versioning using MLflow to ensure reproducibility and performance comparison across experiments.",
+					"Integrated data drift detection in both validation and production environments to maintain model reliability and detect distributional shifts.",
+					"Developed a Streamlit-based batch prediction interface that outputs churn labels and probability scores for risk-based decision-making.",
+					"Containerized the application using Docker and deployed it on AWS EC2, with model artifacts securely stored and retrieved from Amazon S3."
+				],
+				impact: [
+					"<b>Proactive Retention Strategy:</b> Enabled identification of high-risk customers using probability-based scoring, allowing the business to prioritize targeted retention campaigns.",
+					"<b>Production-Grade Reliability:</b> Ensured model stability through automated monitoring and drift detection, reducing the risk of performance degradation over time.",
+					"<b>Scalability & Deployment Readiness:</b> Architected a Dockerized, cloud-deployed ML system capable of handling batch predictions in a real-world environment.",
+					"<b>Operational Efficiency:</b> Automated the end-to-end ML lifecycle, reducing manual intervention and enabling faster, data-driven business decisions."
+				],
+				links: [
+					{ label: "GitHub", url: "https://github.com/Sugiuma/End_to_End_MLOPS" }
+				]
+			},
+			6: {
+				category: "Automated Car Damage Classification",
+				title: "Deep Learning",
+				image: "images/deep.png",
+				imageAlt: "Deep Learning Car Damage",
+				problem: [
+					"Insurance companies, auto repair shops, and vehicle inspection services rely heavily on manual visual assessments of car damage, which are time-consuming and prone to subjective judgment.",
+					"Inconsistent evaluations can slow claims processing, increase operational costs, and introduce variability in damage appraisal.",
+					"There was a need for an automated, high-precision system to classify vehicle damage efficiently, improving workflow speed and consistency across stakeholders."
+				],
+				solution: [
+					"Developed a supervised learning pipeline leveraging multiple Convolutional Neural Network (CNN) architectures to classify car damage into six distinct categories.",
+					"Implemented transfer learning using pre-trained ImageNet backbones to accelerate training and capture complex visual features.",
+					"Applied advanced data augmentation strategies, including geometric and color-space transformations, to improve model robustness and generalization.",
+					"Performed systematic hyperparameter tuning of learning rates, dropout ratios, and batch sizes to optimize convergence and validation accuracy.",
+					"Deployed a Streamlit-based interactive interface enabling real-time predictions, model testing, and rapid stakeholder feedback.",
+					"Integrated comprehensive evaluation tools, including confusion matrices and classification reports, for detailed insights into class-specific performance metrics."
+				],
+				impact: [
+					"<b>Operational Efficiency:</b> Reduced manual inspection time, accelerating claims processing and damage assessments for insurance and repair workflows.",
+					"<b>Consistency & Accuracy:</b> Provided objective, reproducible damage classification, minimizing human subjectivity and errors.",
+					"<b>Scalability & Deployment:</b> Delivered a robust CNN-based solution with an interactive web interface for real-time deployment and stakeholder adoption.",
+					"<b>Data-Driven Insights:</b> Enabled detailed performance analysis per damage category, supporting continuous model improvement and informed business decisions."
+				],
+				links: [
+					{ label: "GitHub", url: "https://github.com/Sugiuma/Deep_Learning_Project" }
+				]
+			},
+			7: {
+				category: "Market Research Analytics",
+				title: "Market Fit Research for Air Purifier Development",
+				image: "images/aqi.jpg",
+				imageAlt: "Air Quality AQI",
+				problem: [
+					"AirPure Innovations aims to develop air purifiers amid India's severe air pollution, with 14 cities among the world's 20 most polluted.",
+					"The startup needs to assess market demand and product requirements before committing to production and R&D.",
+					"Key questions include: identifying target pollutants, defining essential product features, estimating city-level demand and market size, and aligning R&D with localized pollution patterns."
+				],
+				solution: [
+					"Designed and developed an end-to-end AQI analytics and market simulation framework using Python, Plotly, Prophet, and Streamlit to guide consumer-centric, sustainable air purifier design.",
+					"Built a fully interactive, one-page Streamlit dashboard that allows stakeholders to dynamically adjust parameters and instantly evaluate city-level demand and adoption scenarios.",
+					"Developed modules for market size estimation, consumer behavior analysis, health impact assessment, and competitive product evaluation, integrating analytics, simulation, and strategy in a single tool.",
+					"Implemented advanced forecasting with Prophet for real-time demand prediction and scenario analysis, providing actionable insights beyond static BI dashboards."
+				],
+				impact: [
+					"<b>Innovation:</b> Developed a fully interactive, one-page Streamlit platform combining static insights with dynamic city-level simulations, integrating population, disease, environmental datasets, and composite city scores.",
+					"<b>Predictive Analytics:</b> Implemented Prophet-based forecasting to predict real-time demand and adoption trends for air purifiers across cities, enabling scenario planning and strategic prioritization.",
+					"<b>Operational Efficiency:</b> Delivered a decision-ready tool that eliminates the need for navigating traditional BI dashboards, providing actionable insights on a single interface.",
+					"<b>Overall Business Value:</b> Empowered data-driven R&D and product strategy by translating complex environmental and market data into actionable insights for product design, market sizing, and city-level demand evaluation."
+				],
+				links: [
+					{ label: "Video - 2min Overview", url: "https://youtu.be/LjJmLiWOt9w?si=5oeJ1xKSoJ5pRej0" },
+					{ label: "GitHub", url: "https://github.com/Sugiuma/Air-Quality" },
+					{ label: "Presentation Video", url: "https://youtu.be/fart_dPZcOg" },
+					{ label: "Dashboard", url: "https://aqianalysis-dfjvztzrg6rpcbrdz5ymya.streamlit.app/" }
+				]
+			},
+			8: {
+				category: "Emerging Skills in Technology",
+				title: "Full Stack Data Science Project",
+				image: "images/capstone.webp",
+				imageAlt: "IBM Capstone",
+				problem: [
+					"Organizations and professionals face uncertainty in prioritizing which programming skills are most in-demand for the current year.",
+					"Job postings, training platforms, and surveys provide fragmented and rapidly changing information, making trend identification challenging.",
+					"Decision-makers need actionable insights on programming languages, databases, and development tools to guide hiring, training, and career planning."
+				],
+				solution: [
+					"Collected data from multiple sources, including online job postings, training platforms, and industry surveys, using web scraping and API integrations.",
+					"Stored and managed data in structured formats including CSV, Excel, and relational databases to ensure scalability and reproducibility.",
+					"Performed data wrangling and preprocessing to clean, normalize, and integrate datasets for consistent analysis.",
+					"Applied statistical analysis and trend detection techniques to identify top programming languages, database skills, and IDEs in demand.",
+					"Developed an interactive IBM Cognos Analytics dashboard to visualize trends, highlight skill gaps, and provide actionable insights for hiring managers, educators, and professionals."
+				],
+				impact: [
+					"<b>Actionable Insights:</b> Enabled stakeholders to identify high-demand programming skills and prioritize hiring, training, and upskilling efforts based on current market trends.",
+					"<b>Data-Driven Decision Making:</b> Consolidated fragmented job and survey data into a unified, reliable source for trend analysis and strategic workforce planning.",
+					"<b>Interactive Visualization:</b> Provided a dynamic dashboard that allows users to explore skill demand by region, job role, and technology, facilitating faster and informed decision-making.",
+					"<b>Future Scalability:</b> The data pipeline supports regular updates and integration of new sources, allowing ongoing tracking of programming skill trends over time."
+				],
+				links: [
+					{ label: "GitHub", url: "https://github.com/Sugiuma/Portfolio_Projects/tree/main/IBM_Capstone_Project" },
+					{ label: "View Report", url: "https://github.com/Sugiuma/Portfolio_Projects/blob/main/IBM_Capstone_Project/report.pdf" }
+				]
+			}
+		};
+
+		// ─── Render project from URL param ───────────────────────────────────────────
+		(function () {
+			const params = new URLSearchParams(window.location.search);
+			const id = params.get('id');
+			const p = projects[id];
+			const article = document.getElementById('project-article');
+
+			if (!p) {
+				article.innerHTML = '<p>Project not found. <a href="index.html">← Back to Projects</a></p>';
+				return;
+			}
+
+			// Update page title
+			document.title = 'Suganya G – ' + p.title;
+
+			// Build list items helper
+			const listItems = arr => arr.map(item => `<li>${item}</li>`).join('');
+
+			// Build action buttons
+			const actionButtons = p.links.map(link =>
+				`<ul class="actions special"><li><a href="${link.url}" class="button" target="_blank">${link.label}</a></li></ul>`
+			).join('');
+
+			article.innerHTML = `
+				<header>
+					<span class="project-category">${p.category}</span>
+					<h2 class="project-title">${p.title}</h2>
+				</header>
+
+				<div class="image fit" style="margin-bottom:1.5em;">
+					<img src="${p.image}" alt="${p.imageAlt}" />
+				</div>
+
+				<p><span style="font-family:'Aptos';font-size:16px;"><i><b>Business Problem:</b></i></span></p>
+				<ul>${listItems(p.problem)}</ul>
+
+				<p><span style="font-family:'Aptos';font-size:16px;"><i><b>Solution:</b></i></span></p>
+				<ul>${listItems(p.solution)}</ul>
+
+				<p><span style="font-family:'Aptos';font-size:16px;"><i><b>Impact:</b></i></span></p>
+				<ul>${listItems(p.impact)}</ul>
+
+				${actionButtons}
+			`;
+		})();
+		</script>
+
+	</body>
+</html>
