@@ -60,7 +60,22 @@
 								
 								<h3>👩‍💻 About Me</h3>
 								<p style="font-style: normal; text-align: justify; font-size: 18px">
-									Former Design Engineer revitalizing a technical career through advanced training in Data Science and Artificial Intelligence. Skilled in statistical analysis, predictive modeling, and intelligent automation, with hands-on experience in Python-based analytics and machine learning tools. Known for bridging engineering rigor with data-driven problem solving to generate actionable insights and scalable solutions. Eager to apply newly honed AI and analytical skills to contribute to data-driven decision-making and business innovation in entry-level data or AI roles.
+									I'm a Design Verification Engineer returning to semiconductors — with an additional layer of experience: two years of systematically built, deployed AI/ML expertise.
+								</p>
+								<p style="font-style: normal; text-align: justify; font-size: 18px">
+									My DV foundation was built at Synopsys and Renesas Mobile, working on eMMC host controller and modem IP verification — constrained random environments, UVM testbenches, SVA/PSL assertion-based verification, CDC analysis with Spyglass, and low-power UPF flows.
+								</p>
+								<p style="font-style: normal; text-align: justify; font-size: 18px">
+									Since 2023, I've retrained systematically across the full AI/ML stack — not just theory, but deployed systems. Starting with data analytics and cloud fundamentals, I progressed through MLOps, deep learning, NLP, and generative AI — each certification backed by an end-to-end portfolio project. Six projects. Six domains. All production-deployed.
+								</p>
+								<p style="font-style: normal; text-align: justify; font-size: 18px">
+									Now I'm pointing all of it back at verification. I've completed a portfolio project applying ML to UVM functional coverage closure — treating simulation logs as a data pipeline, training a Decision Tree to predict uncovered bins, and auto-generating SystemVerilog soft constraints to close the loop into the next regression cycle and AI/ML-driven regression optimisation using open source tools.
+								</p>
+								<p style="font-style: normal; text-align: justify; font-size: 18px">
+									The ability to work across both domains — writing the UVM environment and building the ML layer on top of it — is where I've chosen to focus, and what these projects demonstrate.
+								</p>
+								<p style="font-style: normal; text-align: justify; font-size: 18px">
+									📌 Targeting mid-level DV Engineer roles at semiconductor companies, EDA vendors, and AI chip startups where verification and machine intelligence intersect.
 								</p>
 									
 							
@@ -70,16 +85,19 @@
 								<h3>🚀 Core Competencies</h3>
 								<ul style="list-style-type: disc; margin: 30; padding: 0; font-family: Aptos; text-align: justify;">
 									<li style="margin-bottom: 5px; font-size: 18px; line-height: 1.4;">
-										<strong>Domains</strong>: Data Analytics, Machine Learning, Deep Learning, Natural Language Processing (NLP), Generative AI, Autonomous AI Agents.
+										<strong>Design Verification</strong>: SystemVerilog · UVM · Constrained Random Verification (CRV) · Functional Coverage · SVA · PSL · Formal Verification · Clock Domain Crossing (CDC) · Low Power Verification (UPF) · Regression Management · eMMC Protocol · Spyglass · Cadence Incisive.
 									</li>
 									<li style="margin-bottom: 5px; font-size: 18px; line-height: 1.4;">
-										<strong>Skills</strong>: Python, Pandas, NumPy, SQL, Exploratory Data Analysis (EDA), Feature Engineering, Model Training & Evaluation, NLP, Large Language Models (LLMs), Generative AI, Role-Based Access Control (RBAC), Multi-Agent Systems.
+										<strong>AI / ML Domains</strong>: Data Analytics · Machine Learning · MLOps · Deep Learning · Natural Language Processing (NLP) · Generative AI · Autonomous AI Agents · LLM Applications.
 									</li>
 									<li style="margin-bottom: 5px; font-size: 18px; line-height: 1.4;">
-										<strong>Frameworks & Tools</strong>: Scikit-learn, PyTorch, LangChain, FastAPI, Streamlit, Docker, MLflow, Chroma and other Vector Databases.
+										<strong>Skills</strong>: Python · Pandas · NumPy · SQL · scikit-learn · Feature Engineering · Model Training & Evaluation · Transformer Fine-tuning · SHAP Explainability · RAG Systems · Role-Based Access Control (RBAC) · Multi-Agent Systems.
 									</li>
 									<li style="margin-bottom: 5px; font-size: 18px; line-height: 1.4;">
-										<strong>Architecture Focus</strong>: Modular pipelines, reproducibility, scalability, security-first design, role-based access, and enterprise-ready systems.
+										<strong>Frameworks & Tools</strong>: PyTorch · LangChain · FastAPI · Streamlit · Docker · MLflow · ChromaDB · LangSmith · DuckDB · Shell Scripting · Perl · Git.
+									</li>
+									<li style="margin-bottom: 5px; font-size: 18px; line-height: 1.4;">
+										<strong>Architecture Focus</strong>: Modular pipelines · reproducibility · scalability · security-first design · role-based access · enterprise-ready systems · DV-AI workflow integration.
 									</li>
 								</ul>
 								
@@ -136,6 +154,84 @@
 
 						<!-- Posts -->
 							<section class="posts">
+								<article>
+									<header>
+										<span class="date" style="font-family: 'Aptos'; font-size: 16px;">AI/ML Applied to Design Verification </span>
+										<h2>
+											<a href="https://www.linkedin.com/feed/update/urn:li:activity:7444113188930863105/">
+												UVM Functional Coverage Analysis Using AI/ML
+											</a>
+										</h2>
+									</header>
+									<a href="https://www.linkedin.com/feed/update/urn:li:activity:7444113188930863105/" class="image fit"><img src="images/coverage.png" alt="UVM Coverage ML" /></a>
+
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Business Problem:</b></i></span></p>
+									<ul>
+										<li>In traditional UVM-based verification, achieving functional coverage closure requires manually tuning constraints and writing targeted directed sequences — a process that is time-consuming, iterative, and heavily dependent on engineer intuition.</li>
+										<li>As design complexity grows, uncovered bins become harder to identify through manual inspection of regression reports, leading to longer closure cycles and delayed sign-off.</li>
+										<li>The core question: can coverage closure be data-driven instead of manual and iterative?</li>
+									</ul>
+
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Solution:</b></i></span></p>
+									<ul>
+										<li>Treated the UVM verification environment as a data pipeline — converting simulation logs into a structured training dataset to enable data-driven coverage closure.</li>
+										<li>Trained a Decision Tree classifier using scikit-learn to identify which signal values and stimulus patterns correlate with uncovered bins, learning directly from historical regression data.</li>
+										<li>Generated predictions from the trained model and translated them into auto-generated SystemVerilog soft constraints, feeding back into the UVM environment for the next regression cycle.</li>
+										<li>Implemented the approach based on DVCON-presented methodology, adapting the pipeline end-to-end: simulation log parsing → feature extraction → ML training → constraint generation.</li>
+									</ul>
+
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Impact:</b></i></span></p>
+									<ul>
+										<li><b>Data-Driven Coverage Closure:</b> Replaced manual constraint tuning with an ML-driven feedback loop, enabling the verification environment to self-direct towards uncovered bins based on learned signal correlations.</li>
+										<li><b>Reduced Manual Iteration:</b> Auto-generated SystemVerilog soft constraints eliminate the manual write-run-debug cycle, reducing the effort required per regression iteration.</li>
+										<li><b>Scalability:</b> The pipeline is design-agnostic — simulation logs from any UVM environment can be fed into the framework, making it applicable across IP blocks and protocol verification projects.</li>
+										<li><b>DV-AI Integration:</b> Demonstrated a practical, end-to-end bridge between machine learning inference and a live UVM regression environment — closing the loop from ML prediction back into SystemVerilog.</li>
+									</ul>
+
+									<ul class="actions special">
+										<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7444113188930863105/" class="button">Report</a></li>
+									</ul>
+								</article>
+
+								<article>
+									<header>
+										<span class="date" style="font-family: 'Aptos'; font-size: 16px;">AI/ML Applied to Design Verification </span>
+										<h2>
+											<a href="https://www.linkedin.com/feed/update/urn:li:activity:7448767370136846337/">
+												AI/ML-Driven Regression Optimization for DV
+											</a>
+										</h2>
+									</header>
+									<a href="https://www.linkedin.com/feed/update/urn:li:activity:7448767370136846337/" class="image fit"><img src="images/regression.png" alt="DV Regression ML" /></a>
+
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Business Problem:</b></i></span></p>
+									<ul>
+										<li>Modern ASIC verification regressions can contain hundreds to thousands of test cases, many of which are redundant or low-yield for a given design state — yet all are run by default, consuming significant compute time and delaying bug discovery.</li>
+										<li>Test selection and prioritisation are typically done manually or through simple heuristics, with no mechanism to learn from historical regression data about which tests are most likely to expose new failures.</li>
+										<li>The challenge: can ML learn from past regression history to intelligently prioritise which tests to run first, surfacing failures faster and reducing overall regression turnaround time?</li>
+									</ul>
+
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Solution:</b></i></span></p>
+									<ul>
+										<li>Implementing DVCON-presented techniques to apply machine learning to regression test selection and prioritisation in UVM-based hardware verification workflows.</li>
+										<li>Parsing historical regression logs to extract per-test features — pass/fail history, coverage contribution, runtime, seed, and design state indicators — building a structured dataset for ML training.</li>
+										<li>Training classification and ranking models using scikit-learn to predict test failure likelihood and coverage yield, enabling intelligent ordering of the regression suite.</li>
+										<li>Feeding ranked test lists back into the UVM regression environment, prioritising high-impact tests to surface bugs and coverage gaps earlier in the regression cycle.</li>
+									</ul>
+
+									<p><span class="date" style="font-family: 'Aptos'; font-size: 16px;"><i><b>Impact:</b></i></span></p>
+									<ul>
+										<li><b>Faster Bug Discovery:</b> By running highest-failure-probability tests first, critical bugs are surfaced early in the regression cycle rather than at the tail end of a full run.</li>
+										<li><b>Reduced Compute Cost:</b> Intelligent test selection reduces the number of tests required to achieve equivalent coverage and failure detection, lowering simulation resource consumption.</li>
+										<li><b>Learning from History:</b> The ML model improves with each regression cycle as new pass/fail data is added, making the system progressively smarter over time.</li>
+										<li><b>DV Workflow Integration:</b> Designed to integrate with existing UVM regression infrastructure — the ML layer sits alongside the verification environment without requiring changes to the testbench architecture.</li>
+									</ul>
+
+									
+									<ul class="actions special">
+										<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7448767370136846337/" class="button">Report</a></li>
+									</ul>
+								</article>
 								<article>
 									<header>
 										<span class="date" style="font-family: 'Aptos'; font-size: 16px;">Role Based Access Control Chatbot</span>
